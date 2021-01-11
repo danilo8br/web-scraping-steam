@@ -17,9 +17,10 @@ Importing libraries
 
 <details><summary>Selenium</summary>
   Importing the Selenium library webdriver.
-</details>
-
+  
 ```
 from selenium import webdriver
 from time import sleep
 ```
+</details>
+

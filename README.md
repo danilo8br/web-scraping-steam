@@ -7,6 +7,8 @@ The goal of the project is to take data from Steam with Python and Selenium and 
 
 - Once installed, it has to be in the same directory as your file that will be made the script.
 
-Download link: https://chromedriver.chromium.org/downloads
+- Download link: https://chromedriver.chromium.org/downloads
+
+# Let's go to the code
 
 ### 

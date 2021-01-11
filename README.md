@@ -35,7 +35,7 @@ from time import sleep
 
 Interacting with chrome and taking the page we are going to use.
 
-<details><summary>Webdriver</summmary>   
+<details><summary>Webdriver</summary>   
   Interacting and taking the page
 </details>
 
@@ -44,3 +44,25 @@ driver = webdriver.Chrome('chromedriver')
 driver.get('https://store.steampowered.com/games/?l=brazilian')
 ```
 
+### Developing the function 
+
+This function sends the data to the steam.csv file (if the file does not exist, it will be created).
+The function will take 15 elements from the page and the data are name, price, discount and description.
+
+<details><summary>Function one</summary>
+  Getting the data
+</details>
+
+```
+def le_jogos():
+    with open('steam.csv','a', encoding='utf-8') as file:
+        for c in range(1, 16):
+            nome = driver.find_element_by_xpath(f'//*[@id="NewReleasesRows"]/a[{c}]/div[3]/div[1]').text
+            try:
+                preco = driver.find_element_by_xpath(f'//*[@id="NewReleasesRows"]/a[{c}]/div[2]/div[2]/div[2]').text
+            except:
+                preco = driver.find_element_by_xpath(f'//*[@id="NewReleasesRows"]/a[{c}]/div[2]/div/div').text
+            desconto = driver. find_element_by_xpath(f'//*[@id="NewReleasesRows"]/a[{c}]/div[2]/div[1]').text
+            descricao = driver.find_element_by_xpath(f'//*[@id="NewReleasesRows"]/a[{c}]/div[3]/div[2]/div').text
+            file.write(nome+'; '+preco+'; '+desconto+'; '+descricao+"\n")
+```

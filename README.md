@@ -76,4 +76,17 @@ def clica():
     driver.find_element_by_xpath('//*[@id="NewReleases_btn_next"]').click
 ```
 
-###
+### Finishing
+
+This loop will be calling the first function that will be getting, then wait 5 seconds to go to the next page and get data from the current page.
+
+<details><summary></summary>
+  Taking data from each page
+</details>
+
+```
+while True:
+    le_jogos()
+    sleep(5)
+    clica()
+```

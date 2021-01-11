@@ -15,16 +15,14 @@ The goal of the project is to take data from Steam with Python and Selenium and 
 
 Importing libraries
 
-<details><summary>Selenium</summary>
+<summary>Selenium</summary>
   Importing the Selenium library webdriver.
-  
-  
-  
+
+
 ```
 from selenium import webdriver
 from time import sleep
 ```
 
 
-</details>
 

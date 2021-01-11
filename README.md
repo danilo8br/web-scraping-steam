@@ -21,8 +21,12 @@ Importing libraries
 
 ```
 from selenium import webdriver
-from time import sleep
 ```
 
+<details><summary>Sleep</summary>
+  Importing Sleep from the Time library
+</details>
 
-
+```
+from time import sleep
+```

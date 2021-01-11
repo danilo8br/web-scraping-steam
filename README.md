@@ -30,3 +30,10 @@ from selenium import webdriver
 ```
 from time import sleep
 ```
+
+### Chrome interaction
+
+<details><summary>Webdriver</summmary>
+  Interacting with chrome and taking the page we are going to use.
+</details>
+

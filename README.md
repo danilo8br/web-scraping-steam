@@ -11,4 +11,12 @@ The goal of the project is to take data from Steam with Python and Selenium and 
 
 # Let's go to the code
 
-### 
+### Modules 
+
+Importing libraries
+
+<details><summary>Selenium</summary>
+  Importing the Selenium library webdriver.
+</details>
+
+

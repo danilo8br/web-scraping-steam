@@ -49,7 +49,7 @@ driver.get('https://store.steampowered.com/games/?l=brazilian')
 This function sends the data to the steam.csv file (if the file does not exist, it will be created).
 The function will take 15 elements from the page and the data are name, price, discount and description.
 
-<details><summary>Function one</summary>
+<details><summary>First function</summary>
   Getting the data
 </details>
 
@@ -64,5 +64,16 @@ def le_jogos():
                 preco = driver.find_element_by_xpath(f'//*[@id="NewReleasesRows"]/a[{c}]/div[2]/div/div').text
             desconto = driver. find_element_by_xpath(f'//*[@id="NewReleasesRows"]/a[{c}]/div[2]/div[1]').text
             descricao = driver.find_element_by_xpath(f'//*[@id="NewReleasesRows"]/a[{c}]/div[3]/div[2]/div').text
-            file.write(nome+'; '+preco+'; '+desconto+'; '+descricao+"\n")
+            file.write(nome+'; '+preco+'; '+desconto+'; '+descricao+'\n')
 ```
+
+<details><summary>Second function</summary>
+  The second function will click on the button when it is called and will move to the next page to get the data.
+</details>
+
+```
+def clica():
+    driver.find_element_by_xpath('//*[@id="NewReleases_btn_next"]').click
+```
+
+###
